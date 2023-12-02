@@ -1,0 +1,87 @@
+
+
+    .trendy-topic{
+        grid-template-columns: 1fr;
+        gap: 2rem!important;
+        margin-bottom: -2rem;
+        grid-template-areas:
+            "image"
+            "title"
+            "description"
+            "button";
+            &__image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                grid-area: image;
+            }
+            &__title{
+                grid-area: title;
+                font-size: 3.5rem;
+                font-weight: 800;
+                line-height: 1;
+                margin-bottom: 2rem;
+                letter-spacing: -2px;
+                margin-top: 2rem;
+            }
+            &__description{
+                grid-area: description;
+                font-size: 1rem;
+                font-weight: 300;
+                line-height: 1.5rem;
+                color: $gray_color;
+                letter-spacing: 0.05rem;
+                padding-right: 1rem;
+
+            }
+            &__button{
+                grid-area: button;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                justify-self: start;
+                align-self: start;
+                font-size: 0.8rem;
+                font-weight: 700;
+                line-height: 1.5;
+                padding: 0.8rem 2.5rem;
+                border: none;
+                color: white;
+                background-color: $orangeActive;
+                margin-top: 2rem;
+                cursor: pointer;
+                &:hover{
+                    background-color:  hsl(0, 0%, 0%);;
+                }
+            }
+    }
+    
+
+@media screen and (width > 450px) {
+    .trendy-topic{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "image image"
+            "title description"
+            "title button";
+        align-items: center;
+     
+        gap: 1rem;
+        &__title{
+            font-size: 4rem;
+            margin-top: 1rem;
+        }
+    
+        &__image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            grid-area: image;
+        }
+        &__button{
+            margin-top: 1rem;
+        }
+       
+    }
+    
+}

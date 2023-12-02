@@ -1,0 +1,23 @@
+
+
+.header{
+    grid-area: header;
+
+}
+
+.main{
+    grid-area: main;
+    height: fit-content;
+ 
+}
+
+.sidebar{
+    grid-area: side;
+   
+}
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+   
+}

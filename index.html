@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./dist/css/style.css" />
+
+		<title>Frontend Mentor | News homepage</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="header__logo"><img src="./assets/images/logo.svg" alt="logo" /></div>
+				<button class="nav__icon" id="nav-mobile__button">
+					<svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+						<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+						<path
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+						/>
+					</svg>
+				</button>
+				<div class="overlay">
+					<nav class="nav-mobile">
+						<button>
+							<svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+								<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+								<path
+									d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+								/>
+							</svg>
+						</button>
+						<ul>
+							<li class="nav-mobile_item"><a href="#">Home</a></li>
+							<li class="nav-mobile_item"><a href="#">New</a></li>
+							<li class="nav-mobile_item"><a href="#">Popular</a></li>
+							<li class="nav-mobile_item"><a href="#">Trending</a></li>
+							<li class="nav-mobile_item"><a href="#">Categories</a></li>
+						</ul>
+					</nav>
+				</div>
+				<nav class="header__nav">
+					<ul>
+						<li class="nav_item"><a href="#">Home</a></li>
+						<li class="nav_item"><a href="#">New</a></li>
+						<li class="nav_item"><a href="#">Popular</a></li>
+						<li class="nav_item"><a href="#">Trending</a></li>
+						<li class="nav_item"><a href="#">Categories</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<article class="trendy-topic">
+					<img
+						src="./assets/images/image-web-3-desktop.jpg"
+						alt="web3"
+						class="trendy-topic__image"
+					/>
+					<h1 class="trendy-topic__title">The Bright Future of Web 3.0?</h1>
+					<p class="trendy-topic__description">
+						We dive into the next evolution of the web that claims to put the power of the platforms
+						back into the hands of the people. But is it really fulfilling its promise?
+					</p>
+					<button class="trendy-topic__button trendy-topic__button--light">Read more</button>
+				</article>
+			</main>
+			<sidebar class="sidebar last-news">
+				<h2 class="sidebar__title">New</h2>
+				<ul>
+					<li class="last-news__li">
+						<h3 class="last-news__title">Hydrogen VS Electric Cars</h3>
+						<p class="last-news__text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+					</li>
+					<li class="last-news__li">
+						<h3 class="last-news__title">The Downsides of AI</h3>
+						<p class="last-news__text">
+							Artistry What are the possible adverse effects of on-demand AI image generation?
+						</p>
+					</li>
+					<li class="last-news__li">
+						<h3 class="last-news__title">Is VC Funding Drying Up?</h3>
+						<p class="last-news__text">
+							Private funding by VC firms is down 50% YOY. We take a look at what that means.
+						</p>
+					</li>
+				</ul>
+			</sidebar>
+			<footer class="footer">
+				<section class="latest-articles">
+					<article class="article">
+						<img
+							class="article__image"
+							src="./assets/images/image-retro-pcs.jpg"
+							alt="Retro Image"
+						/>
+						<h3 class="article__number">01</h3>
+						<h2 class="article__title">Reviving Retro PCs</h2>
+						<p class="article__description">What happens when old PCs are given modern upgrades?</p>
+					</article>
+					<article class="article">
+						<img
+							class="article__image"
+							src="./assets/images/image-top-laptops.jpg"
+							alt="Laptos Image"
+						/>
+						<h3 class="article__number">02</h3>
+						<h2 class="article__title">Top 10 Laptops of 2022</h2>
+						<p class="article__description">Our best picks for various needs and budgets.</p>
+					</article>
+					<article class="article">
+						<img
+							class="article__image"
+							src="./assets/images/image-top-laptops.jpg"
+							alt="Laptos Image"
+						/>
+						<h3 class="article__number">03</h3>
+						<h2 class="article__title">The Growth of Gaming</h2>
+						<p class="article__description">How the pandemic has sparked fresh opportunities.</p>
+					</article>
+				</section>
+				<div class="attribution">
+					Challenge by
+					<a
+						href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl"
+						target="_blank"
+						>Frontend Mentor</a
+					>. Coded by
+					<a href="https://github.com/Sailmaster91/News-FrontPage-challenge">Sail Guerrero</a>.
+				</div>
+			</footer>
+		</div>
+		<script src="./dist/bundle.js"></script>
+	</body>
+</html>

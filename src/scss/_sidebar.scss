@@ -1,0 +1,36 @@
+
+.sidebar{
+   align-self: flex-start;
+    background-color:$black;
+    color: $ligthGrayColor;
+    padding: 1.5rem ;
+    padding-bottom: 0;
+    &__title{
+        color: $yellowAccent;
+        font-size: 2.5rem;
+        font-weight: 700;
+       
+    }
+
+
+}
+.last-news{
+    &__li{
+        border-bottom: 1px $ligthGrayColor solid;
+        padding: 1.8rem 0;
+        line-height: 2rem;
+
+    }
+    &__li:last-child{
+        border-bottom: 0;
+    }
+    &__title{
+        font-size: 1.3rem;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            color:$orangeActive;
+        }
+    }
+}
+

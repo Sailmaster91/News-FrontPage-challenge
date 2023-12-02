@@ -1,0 +1,19 @@
+@mixin gridLayout( $gap) {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "side"
+        "footer";
+        grid-template-rows: auto 1fr 1fr 1fr;
+        grid-template-columns:  1fr;
+    gap: $gap;
+    @media (width > 1000px) {
+        grid-template-areas: 
+        "header header header"
+        "main main side"
+        "footer footer footer";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto ;
+      }
+}
